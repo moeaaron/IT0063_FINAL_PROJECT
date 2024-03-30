@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>PokeStore</title>
+   <style>
+   	body {
+   		font-family: Arial, sans-serif;
+   		margin: 0;
+   		padding: 0;
+   	}
+   	
+   	header {
+   		background-color: #ff0000;
+   		color: #fff;
+   		padding: 20px;
+   		text-align: center;
+   	}
+   	
+   	nav {
+   		background-color: #333;
+   		overflow: hidden;
+   	}
+   	
+   	nav a {
+   		float: left;
+   		color: #fff;
+   		text-align: center;
+   		padding: 14px 16px;
+   		text-decoration: none;
+   	}
+   	
+   	nav a:hover {
+   		background-color: #ddd;
+   		color: #333;
+   	}
+   	
+   	section {
+   		padding: 20px;
+   	}
+   	
+   	footer {
+   		background-color: #333;
+   		color: #fff;
+   		text-align: center;
+   		padding: 10px;
+   	}
+   </style>
+</head>
+<body>
+   <header>
+   	<h1>PokeStore</h1>
+   </header>
+   
+   <nav>
+   	<a href="#home">Home</a>
+   	<a href="#register">Register</a>
+   	<a href="#store">Store</a>
+   	<a href="#cart">Cart</a>
+   	<a href="#payment">Payment</a>
+   	<a href="#transactions">Transactions</a>
+   	<a href="#profile">Profile</a>
+   </nav>
+   
+   <section id="home">
+   	<h2>Welcome to PokeStore</h2>
+   	<p>Get all your Pokemon GO items here!</p>
+   </section>
+   
+   <section id="register">
+   	<h2>Register</h2>
+   	<form>
+   		<label for="email">Email:</label>
+   		<input type="email" id="email" name="email" required>
+   		
+   		<label for="password">Password:</label>
+   		<input type="password" id="password" name="password" required>
+   		
+   		<label for="confirm-password">Confirm Password:</label>
+   		<input type="password" id="confirm-password" name="confirm-password" required>
+   		
+   		<label for="player-id">Player ID:</label>
+   		<input type="text" id="player-id" name="player-id" placeholder="Auto-generated" disabled>
+   		
+   		<label for="ign">In-Game Name:</label>
+   		<input type="text" id="ign" name="ign" required>
+   		
+   		<button type="submit">Register</button>
+   	</form>
+   </section>
+   
+   <section id="store">
+   	<h2>Store</h2>
+   	<p>Here you can find all the items available in Pokemon GO.</p>
+   	<!-- Replace with actual item images and details -->
+   	<img src="item1.png" alt="Item 1">
+   	<img src="item2.png" alt="Item 2">
+   	<!-- ... -->
+   </section>
+   
+   <section id="cart">
+   	<h2>Cart</h2>
+   	<p>Here are the items in your cart.</p>
+   	<!-- Replace with actual cart details -->
+   	<ul>
+   		<li>Item 1 - $0.99</li>
+   		<li>Item 2 - $1.99</li>
+   		<!-- ... -->
+   	</ul>
+   </section>
+   
+   <section id="payment">
+   	<h2>Payment</h2>
+   	<p>Please select your payment method.</p>
+   	<!-- Replace with actual payment options -->
+   	<input type="radio" id="credit-card" name="payment-method" value="credit-card">
+   	<label for="credit-card">Credit Card</label><br>
+   	<input type="radio" id="paypal" name="payment-method" value="paypal">
+   	<label for="paypal">PayPal</label>
+   </section>
+   
+   <section id="transactions">
+   	<h2>Transaction History</h2>
+   	<p>Here are your past transactions.</p>
+   	<!-- Replace with actual transaction details -->
+   	<ul>
+   		<li>Transaction 1 - $5.99 on 01/01/2023</li>
+   		<li>Transaction 2 - $2.99 on 02/15/2023</li>
+   		<!-- ... -->
+   	</ul>
+   </section>
+   
+   <section id="profile">
+   	<h2>Profile</h2>
+   	<p>Here are your profile details.</p>
+   	<!-- Replace with actual profile details -->
+   	<p>Name: John Doe</p>
+   	<p>Email: johndoe@example.com</p>
+   	<p>Player ID: 1234 5678 9012</p>
+   	<p>In-Game Name: TrainerJohn</p>
+   </section>
+   
+   <footer>
+   	<p>&copy; PokeStore</p>
+   	<p>Disclaimer: The copyright owner of the images used is Niantic and this project is for educational purposes only and no copyright infringement is intended.</p>
+   </footer>
+</body>
+</html>
