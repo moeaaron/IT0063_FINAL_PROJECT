@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PokeStore - Store</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="store.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+            <a class="navbar-brand" href="#">PokeStore</a>
+            <div class="logo-container"><img src="https://th.bing.com/th/id/OIG2.7m511GDtOMGPlj3XasDi?w=270&h=270&c=6&r=0&o=5&pid=ImgGn" alt="Webpage Logo" class="navbar-brand"></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Register</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="store.html">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="payment.html">Payment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="transactions.html">Transactions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container my-5">
+        <h2>Store</h2>
+        <p>Here you can find all the items available in Pokemon GO.</p>
+        <div class="notification" style="display: none;"></div>
+        <div class="item-container">
+            <div class="item-box">
+                <div class="image-container"><img src="https://www.serebii.net/pokemongo/items/20pokeballs.png" alt="20 Poké Balls"></div>
+                <h5 class="item-text">20 Poké Balls</h5>
+                <p class="item-text">Price: $0.99</p>
+                <button class="btn btn-danger add-to-cart" data-item="20 Poké Balls" data-price="0.99">Add to Cart</button>
+            </div>
+            <div class="item-box">
+                <div class="image-container"><img src="https://www.serebii.net/pokemongo/items/100pokeballs.png" alt="100 Poké Balls"></div>
+                <h5 class="item-text">100 Poké Balls</h5>
+                <p class="item-text">Price: $1.99</p>
+                <button class="btn btn-danger add-to-cart" data-item="100 Poké Balls" data-price="1.99">Add to Cart</button>
+            </div>
+            <div class="item-box">
+                <div class="image-container"><img src="https://www.serebii.net/pokemongo/items/200pokeballs.png" alt="200 Poké Balls"></div>
+                <h5 class="item-text">200 Poké Balls</h5>
+                <p class="item-text">Price: $3.99</p>
+                <button class="btn btn-danger add-to-cart" data-item="200 Poké Balls" data-price="3.99">Add to Cart</button>
+            </div>
+            <div class="item-box">
+                <div class="image-container"><img src="https://www.serebii.net/pokemongo/items/10maxpotions.png" alt="10 Max Potions"></div>
+                <h5 class="item-text">10 Max Potions</h5>
+                <p class="item-text">Price: $0.99</p>
+                <button class="btn btn-danger add-to-cart" data-item="10 Max Potions" data-price="0.99">Add to Cart</button>
+            </div>
+            <div class="item-box">
+                <div class="image-container"><img src="https://static.wikia.nocookie.net/pokemongo/images/d/d0/Max_Revive.png/revision/latest/scale-to-width-down/150?cb=20160717150056" alt="6 Max Revives"></div>
+                <h5 class="item-text">6 Max Revives</h5>
+                <p class="item-text">Price: $1.99</p>
+                <button class="btn btn-danger add-to-cart" data-item="6 Max Revives" data-price="1.99">Add to Cart</button>
+            </div>
+            <div class="item-box">
+                <div class="image-container"><img src="https://www.serebii.net/pokemongo/items/incense.png" alt="Item 2"></div>
+                <h5 class="item-text">Incense</h5>
+                <p class="item-text">Price: $1.99</p>
+                <button class="btn btn-danger add-to-cart" data-item="Incense" data-price="1.99">Add to Cart</button>
+            </div>
+            <div class="item-box">
+                <div class="image-container"><img src="https://www.serebii.net/pokemongo/items/8incense.png" alt="Item 2"></div>
+                <h5 class="item-text">8 Incense</h5>
+                <p class="item-text">Price: $2.99</p>
+                <button class="btn btn-danger add-to-cart" data-item="8 Incense" data-price="2.99">Add to Cart</button>
+            </div>
+            <div class="item-box">
+                <div class="image-container"><img src="https://www.serebii.net/pokemongo/items/25incense.png" alt="Item 2"></div>
+                <h5 class="item-text">25 Incense</h5>
+                <p class="item-text">Price: $3.99</p>
+                <button class="btn btn-danger add-to-cart" data-item="25 Incense" data-price="3.99">Add to Cart</button>
+            </div>
+            <div class="item-box">
+                <div class="image-container"><img src="https://www.serebii.net/pokemongo/items/luckyegg.png" alt="Item 2"></div>
+                <h5 class="item-text">Lucky Egg</h5>
+                <p class="item-text">Price: $1.99</p>
+                <button class="btn btn-danger add-to-cart" data-item="Lucky Egg" data-price="1.99">Add to Cart</button>
+            </div>
+            <div class="item-box">
+                <div class="image-container"><img src="https://www.serebii.net/pokemongo/items/8luckyeggs.png" alt="Item 2"></div>
+                <h5 class="item-text">8 Lucky Egg</h5>
+                <p class="item-text">Price: $2.99</p>
+                <button class="btn btn-danger add-to-cart" data-item="8 Lucky Egg" data-price="2.99">Add to Cart</button>
+            </div>
+            <div class="item-box">
+                <div class="image-container"><img src="https://www.serebii.net/pokemongo/items/25luckyeggs.png" alt="Item 2"></div>
+                <h5 class="item-text">25 Lucky Egg</h5>
+                <p class="item-text">Price: $3.99</p>
+                <button class="btn btn-danger add-to-cart" data-item="25 Lucky Egg" data-price="3.99">Add to Cart</button>
+            </div>
+            <div class="item-box">
+                <div class="image-container"><img src="https://www.serebii.net/pokemongo/items/luremodule.png" alt="Item 2"></div>
+                <h5 class="item-text">Lure Module</h5>
+                <p class="item-text">Price: $1.99</p>
+                <button class="btn btn-danger add-to-cart" data-item="Lure Module" data-price="1.99">Add to Cart</button>
+            </div>
+            <div class="item-box">
+                <div class="image-container"><img src="https://www.serebii.net/pokemongo/items/8luremodules.png" alt="Item 2"></div>
+                <h5 class="item-text">8 Lure Modules</h5>
+                <p class="item-text">Price: $2.99</p>
+                <button class="btn btn-danger add-to-cart" data-item="8 Lure Modules" data-price="2.99">Add to Cart</button>
+            </div>
+            <div class="item-box">
+                <div class="image-container"><img src="https://static.wikia.nocookie.net/pokemongo/images/1/16/Glacial_Lure_Module.png/revision/latest/scale-to-width-down/150?cb=20190517224033" alt="Item 2"></div>
+                <h5 class="item-text">Glacial Lure Module</h5>
+                <p class="item-text">Price: $1.99</p>
+                <button class="btn btn-danger add-to-cart" data-item="Glacial Lure Module" data-price="1.99">Add to Cart</button>
+            </div>
+            <div class="item-box">
+                <div class="image-container"><img src="https://static.wikia.nocookie.net/pokemongo/images/c/cc/Mossy_Lure_Module.png/revision/latest/scale-to-width-down/150?cb=20190517224034" alt="Item 2"></div>
+                <h5 class="item-text">Mossy Lure Module</h5>
+                <p class="item-text">Price: $1.99</p>
+                <button class="btn btn-danger add-to-cart" data-item="Mossy Lure Module" data-price="1.99">Add to Cart</button>
+            </div>
+            <div class="item-box">
+                <div class="image-container"><img src="https://static.wikia.nocookie.net/pokemongo/images/5/56/Magnetic_Lure_Module.png/revision/latest/scale-to-width-down/150?cb=20190517224033" alt="Item 2"></div>
+                <h5 class="item-text">Magnetic Lure Module</h5>
+                <p class="item-text">Price: $1.99</p>
+                <button class="btn btn-danger add-to-cart" data-item="Magnetic Lure Module" data-price="1.99">Add to Cart</button>
+            </div>
+            <div class="item-box">
+                <div class="image-container"><img src="https://static.wikia.nocookie.net/pokemongo/images/5/53/Rainy_Lure_Module.png/revision/latest/scale-to-width-down/150?cb=20210428101346" alt="Item 2"></div>
+                <h5 class="item-text">Rainy Lure Module</h5>
+                <p class="item-text">Price: $1.99</p>
+                <button class="btn btn-danger add-to-cart" data-item="Rainy Lure Module" data-price="1.99">Add to Cart</button>
+            </div>
+            <div class="item-box">
+                <div class="image-container"><img src="https://static.wikia.nocookie.net/pokemongo/images/a/a4/Incubator_Unlimited.png/revision/latest/scale-to-width-down/150?cb=20170822025125" alt="Item 2"></div>
+                <h5 class="item-text">Unlimited Egg Incubator</h5>
+                <p class="item-text">Price: $0.99</p>
+                <button class="btn btn-danger add-to-cart" data-item="Unlimited Incubator" data-price="0.99">Add to Cart</button>
+            </div>
+            <div class="item-box">
+                <div class="image-container"><img src="https://static.wikia.nocookie.net/pokemongo/images/d/db/Incubator_Limited.png/revision/latest/scale-to-width-down/150?cb=20170822025124" alt="Item 2"></div>
+                <h5 class="item-text">Limited Egg Incubator</h5>
+                <p class="item-text">Price: $1.99</p>
+                <button class="btn btn-danger add-to-cart" data-item="Limited Incubator" data-price="1.99">Add to Cart</button>
+            </div>
+            <div class="item-box">
+                <div class="image-container"><img src="https://static.wikia.nocookie.net/pokemongo/images/d/d5/Super_Incubator.png/revision/latest/scale-to-width-down/150?cb=20170822025125" alt="Item 2"></div>
+                <h5 class="item-text">Super Egg Incubator</h5>
+                <p class="item-text">Price: $2.99</p>
+                <button class="btn btn-danger add-to-cart" data-item="Super Incubator" data-price="2.99">Add to Cart</button>
+            </div>
+            <div class="item-box">
+                <div class="image-container"><img src="https://static.wikia.nocookie.net/pokemongo/images/1/1c/Rocket_Radar.png/revision/latest/scale-to-width-down/150?cb=20191027020654" alt="Item 2"></div>
+                <h5 class="item-text">Rocket Radar</h5>
+                <p class="item-text">Price: $0.99</p>
+                <button class="btn btn-danger add-to-cart" data-item="Rocket Radar" data-price="0.99">Add to Cart</button>
+            </div>
+            <div class="item-box">
+                <div class="image-container"><img src="https://static.wikia.nocookie.net/pokemongo/images/6/6a/Star_Piece.png/revision/latest/scale-to-width-down/150?cb=20171207002823" alt="Item 2"></div>
+                <h5 class="item-text">Star Piece</h5>
+                <p class="item-text">Price: $1.99</p>
+                <button class="btn btn-danger add-to-cart" data-item="Star Piece" data-price="1.99">Add to Cart</button>
+            </div>
+            <div class="item-box">
+                <div class="image-container"><img src="https://static.wikia.nocookie.net/pokemongo/images/8/87/Premium_Battle_Pass.png/revision/latest/scale-to-width-down/150?cb=20170620212452" alt="Item 2"></div>
+                <h5 class="item-text">Premium Battle Pass</h5>
+                <p class="item-text">Price: $1.99</p>
+                <button class="btn btn-danger add-to-cart" data-item="Premium Battle Pass" data-price="1.99">Add to Cart</button>
+            </div>
+            <div class="item-box">
+                <div class="image-container"><img src="https://static.wikia.nocookie.net/pokemongo/images/1/13/Remote_Raid_Pass.png/revision/latest/scale-to-width-down/150?cb=20200507194813" alt="Item 2"></div>
+                <h5 class="item-text">Remote Raid Pass</h5>
+                <p class="item-text">Price: $1.99</p>
+                <button class="btn btn-danger add-to-cart" data-item="Remote Raid Pass" data-price="1.99">Add to Cart</button>
+            </div>
+            <div class="item-box">
+                <div class="image-container"><img src="https://static.wikia.nocookie.net/pokemongo/images/6/63/Poffin.png/revision/latest/scale-to-width-down/200?cb=20200316183659" alt="Item 2"></div>
+                <h5 class="item-text">Poffin</h5>
+                <p class="item-text">Price: $0.99</p>
+                <button class="btn btn-danger add-to-cart" data-item="Poffin" data-price="0.99">Add to Cart</button>
+            </div>
+            <div class="item-box">
+                <div class="image-container"><img src="https://static.wikia.nocookie.net/pokemongo/images/a/a0/Bag_Upgrade.png/revision/latest?cb=20160726030147" alt="Item 2"></div>
+                <h5 class="item-text">Bag Upgrade</h5>
+                <p class="item-text">Price: $1.99</p>
+                <button class="btn btn-danger add-to-cart" data-item="Bag Upgrade" data-price="1.99">Add to Cart</button>
+            </div>
+            <div class="item-box">
+                <div class="image-container"><img src="https://static.wikia.nocookie.net/pokemongo/images/f/f6/Pok%C3%A9mon_Storage_Upgrade.png/revision/latest?cb=20160726030146" alt="Item 2"></div>
+                <h5 class="item-text">Pokémon Storage Upgrade</h5>
+                <p class="item-text">Price: $1.99</p>
+                <button class="btn btn-danger add-to-cart" data-item="Pokémon Storage Upgrade" data-price="1.99">Add to Cart</button>
+            </div>
+            <div class="item-box">
+                <div class="image-container"><img src="https://static.wikia.nocookie.net/pokemongo/images/9/9b/Postcard_Storage_Upgrade.png/revision/latest?cb=20230519173320" alt="Item 2"></div>
+                <h5 class="item-text">Postcard Pages</h5>
+                <p class="item-text">Price: $1.99</p>
+                <button class="btn btn-danger add-to-cart" data-item="Postcard Pages" data-price="1.99">Add to Cart</button>
+            </div>
+            <div class="item-box">
+                <div class="image-container"><img src="https://static.wikia.nocookie.net/pokemongo/images/4/4d/Team_Medallion.png/revision/latest/scale-to-width-down/128?cb=20190218043507" alt="Item 2"></div>
+                <h5 class="item-text">Team Medallion</h5>
+                <p class="item-text">Price: $1.99</p>
+                <button class="btn btn-danger add-to-cart" data-item="Team Medallion" data-price="1.99">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; PokeStore</p>
+        <p>Disclaimer: The copyright owner of the images used is Niantic and this project is for educational purposes only and no copyright infringement is intended.</p>
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="store.js"></script>
+</body>
+</html>
